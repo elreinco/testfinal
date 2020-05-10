@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Test colágeno</title>
+	<link rel="icon" href="img/icono.png">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<section>
+		
+	<div id="inicio">
+		<h1>Test colágeno</h1>
+		<br>
+		<h4>Descubre si presentas deficiencia de colágeno,<br> realiza el test y recibe tus resultados, <br>automaticamente.</h4>
+	</div>
+	
+	<div id ="seccion">
+		<form action="enviar.php" id="formulario" method="post">
+
+		<button class="botoni" onclick="return false">Realizar test</button>
+
+		<label id = "label1">¿Cuanto años tienes?</label>
+		<input id ="input1" class = "input" type="number" name="edad">
+		<button class = "boton" id="boton1" onclick="return false">Siguiente</button>
+
+		<label id="label2">¿Presentas caida de cabello?</label>
+		<input id="input2" class = "input" type="text" name="caida">
+		<button id="boton2" class = "boton" onclick="return false">Siguiente</button>
+
+		<label id="label3" for="">Email</label>
+		<input id="input3" class = "input" type="email" name="correo" required>
+		<button id="boton3" class = "boton" onclick="return false">Siguiente</button>
+
+		<input id ="enviar"  type="submit" value="Enviar resultados">
+		</form>
+	</div>
+
+	</section>
+	<script type="text/javascript" src="js/dom.js"></script>
+
+</body>
+</html>
+
+<!-- 
+	<?php
+	$destino = "victor.saul.ca@gmail.com";
+	$edad = $_POST["edad"];
+	$caidaCabello = $_POST["caida"];
+	$correo = $_POST["correo"];
+	$asunto="Resultados de tu test colágeno";
+
+	$contenido = "Tu caso ".$caidaCabello." presenta caida de cabello \nTienes actualmente ".$edad." años de edad./nEquipo colágeno naara";
+
+	mail($destino,$asunto,$contenido);
+	header("location:gracias.html");
+?>
+
+-->
